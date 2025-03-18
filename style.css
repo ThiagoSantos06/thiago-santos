@@ -1,0 +1,228 @@
+:root {
+    /* cores */
+
+    --primary: #0699A6;
+    --secondary: #9E8C6C;
+    --background: #fff;
+    --bg-header: #9e8c6c11;
+    --text-light: #333;
+    --text-dark: #fff;
+
+    /* font weight */
+
+    --font-weight1: 700;
+    --font-weight2: 900;
+    --font-weight3: 400;
+
+    /* font size */
+
+    --font-size1: 126px;
+    --font-size2: 18px;
+    --font-size3: 20px;
+    --font-size4: 36px;
+
+    /* font family */
+
+    --font-family1: "PT Sans Narrow", sans-serif;
+    --font-family2: "Playfair Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 747px;
+    background-color: var(--bg-header);
+}
+
+.content-main {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+}
+
+.image-profile {
+    width: 350px;
+    object-fit: contain;
+    margin-right: 125px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-text p {
+    font-family: var(--font-family1);
+    font-weight: var(--font-weight1);
+    font-size: var(--font-size2);
+    color: var(--secondary);
+    letter-spacing: 2px;
+}
+
+.profile-text h1 {
+    font-size: var(--font-size1);
+    font-weight: var(--font-weight2);
+    font-family: var(--font-family2);
+    line-height: 112px;
+    width: 620px;
+    letter-spacing: 2px;
+}
+
+.profile-text a {
+    background-color: var(--primary);
+    font-size: var(--font-size2);
+    font-weight: var(--font-weight1);
+    font-family: var(--font-family1);
+    padding: 18px 62px;
+    text-decoration: none;
+    color: var(--text-dark);
+    display: inline-block;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+/* content main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    height: 1560px;
+    width: 1440px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillset p, .awards p, .careerTraits-title, .recent-works p {
+    color: var(--secondary);
+    font-weight: var(--font-weight1);
+    font-size: var(--font-size2);
+    font-family: var(--font-family1);
+    letter-spacing: 2px;
+}
+
+.skillset-ul, .awards-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 205px;
+    margin-top: 10px;
+}
+
+.careerTraits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.careerTraits-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    margin-top: 10px;
+}
+
+.skillset-ul li, .awards-ul li, .careerTraits-p {
+    color: var(--text-light);
+    font-size: var(--font-size3);
+    font-family: var(--font-family1);
+    font-weight: var(--font-weight3);
+    list-style: none;
+}
+
+.careerTraits-p {
+    width: 350px;
+}
+
+.careerTraits-span {
+    font-weight: var(--font-weight1);
+}
+
+.recent-works li {
+    color: var(--primary);
+    font-size: var(--font-size3);
+    font-family: var(--font-family1);
+    font-weight: var(--font-weight1);
+    list-style: none;
+}
+
+/* main aboutMe */
+
+.main-aboutMe {
+    height: 1572px;
+}
+
+.aboutMe-content h2, .experience-content h2 {
+    font-size: var(--font-size4);
+    font-weight: var(--font-weight2);
+    font-family: var(--font-family2);
+    line-height: 46px;
+}
+
+.experience-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos-p1 {
+    color: var(--secondary);
+    font-size: var(--font-size2);
+    font-weight: var(--font-weight1);
+    font-family: var(--font-family1);
+    line-height: 24px;
+}
+
+.infos-p2 {
+    font-size: var(--font-size2);
+    font-weight: var(--font-weight3);
+    font-family: var(--font-family1);
+    line-height: 24px;
+}
+
+.aboutMe-content p {
+    font-size: var(--font-size3);
+    font-family: var(--font-family1);
+    line-height: 34px;
+    width: 620px;
+    margin-top: 20px;
+}
+
+.aboutMe-content .line-blue, .experience-content .line-blue {
+    background-color: var(--primary);
+    width: 71px;
+    height: 10px;
+    margin-top: 80px;
+}
+
+.experience-content-p {
+    font-size: var(--font-size3);
+    font-weight: var(--font-weight3);
+    font-family: var(--font-family1);
+    line-height: 34px;
+    width: 620px;
+}
+
+.experience-content {
+    margin-top: 66px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
