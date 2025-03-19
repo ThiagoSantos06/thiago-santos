@@ -20,16 +20,25 @@
     --font-size2: 18px;
     --font-size3: 20px;
     --font-size4: 36px;
+    --font-size5: 66px;
+    --font-size6: 56px;
 
     /* font family */
 
     --font-family1: "PT Sans Narrow", sans-serif;
-    --font-family2: "Playfair Display", serif;
+    --font-family2: "Playfair Display", sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 .container {
@@ -155,6 +164,14 @@ main {
     font-weight: var(--font-weight1);
 }
 
+.recent-works ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+}
+
 .recent-works li {
     color: var(--primary);
     font-size: var(--font-size3);
@@ -163,10 +180,21 @@ main {
     list-style: none;
 }
 
+.line-blue-skillset {
+    background-color: var(--primary);
+    width: 54px;
+    height: 10px;
+    margin: 40px 0;
+    display: none;
+}
+
 /* main aboutMe */
 
 .main-aboutMe {
-    height: 1572px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
 }
 
 .aboutMe-content h2, .experience-content h2 {
@@ -187,6 +215,7 @@ main {
     font-weight: var(--font-weight1);
     font-family: var(--font-family1);
     line-height: 24px;
+    margin-bottom: 10px;
 }
 
 .infos-p2 {
@@ -221,8 +250,217 @@ main {
 
 .experience-content {
     margin-top: 66px;
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.container-experience-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    margin-top: 20px;
+}
+
+/* education */
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 70px;
+    height: 90px;
+}
+
+.education-container h2{
+    font-weight: var(--font-weight2);
+    font-size: var(--font-size4);
+    line-height: 46px;
+    font-family: var(--font-family2);
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-content .education-text1 {
+    color: var(--secondary);
+    font-weight: var(--font-weight1);
+    font-family: var(--font-family1);
+    line-height: 24px;
+    font-size: var(--font-size2);
+}
+
+.education-content .education-text2 {
+    color: var(--text-light);
+    font-weight: var(--font-weight3);
+    font-family: var(--font-family1);
+    line-height: 24px;
+    font-size: var(--font-size2);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    background-color: var(--bg-header);
+    height: 550px;
+}
+
+footer h1 {
+    color: var(--text-light);
+    font-size: var(--font-size5);
+    font-weight: var(--font-weight2);
+    font-family: var(--font-family2);
+    line-height: 82px;
+}
+
+.footer-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content p {
+    color: var(--primary);
+    font-weight: var(--font-weight2);
+    font-size: var(--font-size4);
+    font-family: var(--font-family2);
+    line-height: 46px;
+}
+
+.social-media {
+    display: flex;
+    gap: 45px;
+}
+
+@media screen and (max-width: 1475px) {
+    main {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 80px;
+        height: 1560px;
+        width: 1440px;
+    }    
+}
+
+@media screen and (max-width: 1165px) {
+    .image-profile {
+        width: 350px;
+        object-fit: contain;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-text h1 {
+        width: 630px;
+    }
+    
+    .section-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        background-color: var(--bg-header);
+    }
+    
+    .content-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 1440px;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .profile-text p {
+        margin-top: 30px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        order: 1;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 80px;
+        height: auto;
+        
+        width: 1440px;
+    }
+
+    .container-experience-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 900px;
+        margin-top: 20px;
+    }
+
+    .experience-infos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .infos-p2 {
+        margin-bottom: 20px;
+    }
+
+    .education-content {
+        flex-direction: column;
+    }
+
+    .line-blue-skillset {
+        background-color: var(--primary);
+        width: 54px;
+        height: 10px;
+        margin: 40px 0;
+        display: block;
+    }
+
+    .awards p, .careerTraits p, .recent-works p {
+        margin-top: 60px;
+    }
+
+    .careerTraits-content {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        width: 100%;
+    }
+    
+    .profile-text h1 {
+        width: 430px;
+        margin-top: 15px;
+        line-height: 46px;
+        font-size: var(--font-size6);
+    }
 }
